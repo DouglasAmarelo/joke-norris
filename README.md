@@ -44,8 +44,7 @@
 		</td>
 	</tr>
 </table>
-<br />
-<br />
+
 
 ## 🏠 [Homepage](https://douglas-lopes-joke-norris.netlify.com/)
 Você pode acessar o [projeto funcionando aqui](https://douglas-lopes-joke-norris.netlify.com/).
