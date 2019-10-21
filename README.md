@@ -44,8 +44,17 @@
 		</td>
 	</tr>
 </table>
-<br />
-<br />
+
+## 🎨 Layout proposto
+
+| Home **Desktop** | Home **Mobile** |
+| ---------------- | --------------- |
+| ![Home desk](https://user-images.githubusercontent.com/3269950/67169341-59891e80-f381-11e9-8a83-f290a44c9f4f.png) | ![Home mobile](https://user-images.githubusercontent.com/3269950/67169343-5e4dd280-f381-11e9-8946-af2ad2d1c324.png) |
+
+| Interna **Desktop** | Interna **Mobile** |
+| ------------------- | ------------------ |
+| ![Interna desk](https://user-images.githubusercontent.com/3269950/67169342-59891e80-f381-11e9-9efb-6fea1f846332.png) | ![Interna mobile](https://user-images.githubusercontent.com/3269950/67169345-5e4dd280-f381-11e9-8614-4f232cbd3cf5.png) |
+
 
 ## 🏠 [Homepage](https://douglas-lopes-joke-norris.netlify.com/)
 Você pode acessar o [projeto funcionando aqui](https://douglas-lopes-joke-norris.netlify.com/).
