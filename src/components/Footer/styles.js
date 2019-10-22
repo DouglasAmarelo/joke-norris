@@ -11,6 +11,7 @@ export const Footer = styled.footer`
 		align-items: center;
 		display: flex;
 		justify-content: center;
+		padding: 0 30px;
 	}
 
 	a { color: #fff; }

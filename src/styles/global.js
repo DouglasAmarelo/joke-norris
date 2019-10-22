@@ -13,7 +13,7 @@ const GlobalStyles = createGlobalStyle`
 
 	body {
 		font-family: 'Montserrat', sans-serif;
-		background: #ccc;
+		background: #f1f1f1;
 	}
 
 	#root {
@@ -27,7 +27,7 @@ const GlobalStyles = createGlobalStyle`
 		height: 100%;
 		margin: 0 auto;
 		max-width: 1120px;
-		padding: 0 30px;
+		padding: 30px;
 		width: 90%;
 	}
 `;

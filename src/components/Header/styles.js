@@ -9,11 +9,13 @@ export const Header = styled.header`
 	.container {
 		display: flex;
 		justify-content: center;
+		padding: 0 30px;
 	}
 
 	a { display: block; }
 
 	img {
+		margin: 0 auto;
 		display: block;
 		max-height: 100%;
 		width: auto;
