@@ -11,25 +11,22 @@ const GlobalStyles = createGlobalStyle`
 		padding: 0;
 	}
 
+	html,
+	body { height: 100%; }
+
 	body {
-		font-family: 'Montserrat', sans-serif;
 		background: #f1f1f1;
+		font-family: 'Montserrat', sans-serif;
+		padding-bottom: 80px;
+		padding-top: 90px;
+
+		@media (max-width: 490px) {
+			padding-bottom: 50px;
+			padding-top: 70px;
+		}
 	}
 
-	#root {
-		display: flex;
-		flex-direction: column;
-		height: 100vh;
-		justify-content: space-between;
-	}
-
-	.container {
-		height: 100%;
-		margin: 0 auto;
-		max-width: 1120px;
-		padding: 30px;
-		width: 90%;
-	}
+	#root { height: 100%; }
 `;
 
 export default GlobalStyles;

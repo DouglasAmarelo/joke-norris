@@ -5,18 +5,23 @@ export const Header = styled.header`
 	box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .5);
 	color: #fff;
 	height: 90px;
+	position: fixed;
+	top: 0;
+	width: 100%;
 
-	.container {
-		display: flex;
-		justify-content: center;
-		padding: 0 30px;
+	@media (max-width: 490px) {
+		font-size: 10px;
+		height: 70px;
 	}
 
-	a { display: block; }
+	a {
+		display: block;
+		height: 100%;
+	}
 
 	img {
-		margin: 0 auto;
 		display: block;
+		margin: 0 auto;
 		max-height: 100%;
 		width: auto;
 	}

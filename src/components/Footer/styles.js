@@ -1,17 +1,21 @@
 import styled from 'styled-components';
 
 export const Footer = styled.footer`
+	align-items: center;
 	background: #000;
+	bottom: 0;
 	color: #fff;
-	height: 80px;
-	text-align: center;
+	display: flex;
 	font-size: 12px;
+	height: 80px;
+	justify-content: center;
+	position: fixed;
+	text-align: center;
+	width: 100%;
 
-	.container {
-		align-items: center;
-		display: flex;
-		justify-content: center;
-		padding: 0 30px;
+	@media (max-width: 490px) {
+		height: 50px;
+		font-size: 10px;
 	}
 
 	a { color: #fff; }
