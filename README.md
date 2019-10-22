@@ -1,49 +1,52 @@
 <h1 align="center">Welcome to Joke Norris 👋</h1>
 
-<p>
+<p align="center">
 	<a href="https://twitter.com/DouglasAmarelo" target="_blank">
 		<img alt="Twitter: DouglasAmarelo" src="https://img.shields.io/twitter/follow/DouglasAmarelo.svg?style=social" />
 	</a>
-  &nbsp; &nbsp;
+	&nbsp; &nbsp;
 	<a href="https://github.com/DouglasAmarelo?tab=followers" target="_blank">
 		<img alt="GitHub followers" src="https://img.shields.io/github/followers/douglasamarelo?label=Follow%20me&style=social" />
 	</a>
 </p>
 
-> Esse projeto usa a API do [ChuckNorris.io](https://api.chucknorris.io/) para exibir piadas do Chuck Norris separadas em 16 categorias diferentes.
-> As categorias de piadas desse projeto são:
+Esse projeto usa a API do [ChuckNorris.io](https://api.chucknorris.io/) para exibir piadas do Chuck Norris separadas em 16 categorias diferentes.
 
-<table width="100%">
-	<tr>
-		<th colspan="4">Categorias de piada</th>
-	</tr>
-	<tr>
-		<td>
-			animal<br />
-			career<br />
-			celebrity<br />
-			dev<br />
-		</td>
-		<td>
-			explicit<br />
-			fashion<br />
-			food<br />
-			history<br />
-		</td>
-		<td>
-			money<br />
-			movie<br />
-			music<br />
-			political<br />
-		</td>
-		<td>
-			religion<br />
-			science<br />
-			sport<br />
-			travel<br />
-		</td>
-	</tr>
-</table>
+As categorias de piadas desse projeto são:
+
+<div align="center">
+	<table width="100%">
+		<tr>
+			<th colspan="4">Categorias das piadas vindas da api do <a href="https://api.chucknorris.io/"  target="_blank">ChuckNorris.io</a></th>
+		</tr>
+		<tr>
+			<td>
+				animal<br />
+				career<br />
+				celebrity<br />
+				dev<br />
+			</td>
+			<td>
+				explicit<br />
+				fashion<br />
+				food<br />
+				history<br />
+			</td>
+			<td>
+				money<br />
+				movie<br />
+				music<br />
+				political<br />
+			</td>
+			<td>
+				religion<br />
+				science<br />
+				sport<br />
+				travel<br />
+			</td>
+		</tr>
+	</table>
+</div>
 
 ## 🎨 Layout proposto
 
