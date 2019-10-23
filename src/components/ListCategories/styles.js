@@ -25,10 +25,11 @@ export const ListItemLink = styled(Link)`
 	font-weight: 900;
 	padding: 6px 1.5em;
 	text-decoration: none;
+	text-shadow: 0 2px 2px rgba(0, 0, 0, .7);
 	text-transform: uppercase;
 	transition:
-		background-color .2s ease,
 		color .2s ease,
+		text-shadow .2s ease,
 		font-size .3s ease,
 		padding .3s ease
 	;
@@ -38,7 +39,7 @@ export const ListItemLink = styled(Link)`
 
 	/* Hover effects */
 	&:hover {
-		background-color: #fff;
 		color: #000;
+		text-shadow: 0 2px 2px #fff;
 	}
 `;

@@ -2,25 +2,32 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const ActionContainer = styled.div`
-	margin-bottom: -2em;
 	text-align: center;
 `;
 
 export const ActionButton = styled.button`
 	background: #fff;
-	display: block;
-	margin: 0 auto;
+	border-radius: 100px;
 	border: none;
 	color: #000;
+	cursor: pointer;
+	display: block;
 	font-size: 22px;
-	text-transform: uppercase;
 	font-weight: 900;
-	border-radius: 100px;
+	margin: 0 auto;
 	padding: .7em 2em;
+	text-transform: uppercase;
 	transition:
+		box-shadow .3s ease,
+		text-shadow .3s ease,
 		font-size .3s ease,
 		padding .3s ease
 	;
+
+	&:hover {
+		box-shadow: 0 0 10px 0 #fff;
+		text-shadow: 0 2px 1px #ccc;
+	}
 
 	@media (max-width: 640px) { font-size: 16px; }
 	@media (max-width: 490px) {
@@ -36,4 +43,11 @@ export const ActionLink = styled(Link)`
 	font-weight: 900;
 	margin: 1.5em 0;
 	text-transform: uppercase;
+
+	@media (max-width: 640px) { font-size: 10px; }
+
+	&:hover {
+		text-decoration: none;
+		color: #000;
+	}
 `;
