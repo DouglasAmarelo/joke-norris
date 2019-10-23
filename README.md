@@ -48,7 +48,7 @@ As categorias de piadas desse projeto são:
 	</table>
 </div>
 
-## 🎨 Layout proposto
+## 🎨 Layout
 
 | Home **Desktop** | Home **Mobile** |
 | ---------------- | --------------- |
