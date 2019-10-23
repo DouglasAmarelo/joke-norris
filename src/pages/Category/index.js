@@ -10,10 +10,13 @@ const Category = (props) => {
 	const { category } = props.match.params;
 	const [joke, setJoke] = useState('');
 
+	const getAJoke = () => {
+		api.getJoke(category).then(joke => setJoke(joke));
+	};
+
 	useEffect(() => {
-		api.getJoke(category)
-			.then(joke => setJoke(joke));
-	}, [category]);
+		getAJoke();
+	}, []);
 
 	return(
 		<>
@@ -22,7 +25,7 @@ const Category = (props) => {
 					<Joke id={joke.id} joke={joke.value} />
 				</div>
 				<div>
-					<JokeActions />
+					<JokeActions getAJoke={getAJoke} />
 				</div>
 			</PageContainer>
 		</>

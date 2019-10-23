@@ -8,7 +8,18 @@ const Home = () => {
 	const [jokeCategories, setJokeCategories] = useState([]);
 
 	useEffect(() => {
-		api.getJokeCategories().then(categories => setJokeCategories(categories));
+		const jokeCategoriesLocal = localStorage.getItem('jokeCategories');
+
+		if(jokeCategoriesLocal) {
+			setJokeCategories(JSON.parse(jokeCategoriesLocal));
+			return;
+		}
+
+		api.getJokeCategories().then(categories => {
+			localStorage.setItem('jokeCategories', JSON.stringify(categories));
+
+			setJokeCategories(categories);
+		});
 	}, []);
 
 	return(

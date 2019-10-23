@@ -2,10 +2,10 @@ import React from 'react';
 
 import * as S from './styles';
 
-const JokeActions = () => {
+const JokeActions = ({ getAJoke }) => {
 	return(
 		<S.ActionContainer>
-			<S.ActionButton>
+			<S.ActionButton onClick={() => getAJoke()}>
 				See another joke about animal
 			</S.ActionButton>
 
