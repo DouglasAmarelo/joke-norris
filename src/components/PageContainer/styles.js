@@ -10,10 +10,10 @@ export const PageContainer = styled.section`
 	min-height: 100%;
 	justify-content: center;
 	transition: background 2s ease;
-`;
 
-export const Content = styled.div`
-	margin: 0 auto;
-	max-width: 1400px;
-	padding: 30px;
+	div {
+		margin: 0 auto;
+		max-width: 1400px;
+		padding: 30px;
+	}
 `;

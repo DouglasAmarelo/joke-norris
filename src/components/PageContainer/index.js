@@ -27,9 +27,7 @@ const PageContainer = ({ children }) => {
 
 	return(
 		<S.PageContainer bgColors={bgColor}>
-			<S.Content>
-				{children}
-			</S.Content>
+			{children}
 		</S.PageContainer>
 	);
 };
