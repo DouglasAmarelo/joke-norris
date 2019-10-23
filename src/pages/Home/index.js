@@ -13,7 +13,9 @@ const Home = () => {
 
 	return(
 		<PageContainer>
-			<ListCategories categories={jokeCategories} />
+			<div>
+				<ListCategories categories={jokeCategories} />
+			</div>
 		</PageContainer>
 	);
 };

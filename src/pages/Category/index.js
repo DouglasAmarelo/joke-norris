@@ -4,6 +4,7 @@ import * as api from '../../services/api';
 
 import PageContainer from '../../components/PageContainer';
 import Joke from '../../components/Joke';
+import JokeActions from '../../components/JokeActions';
 
 const Category = (props) => {
 	const { category } = props.match.params;
@@ -15,9 +16,16 @@ const Category = (props) => {
 	}, [category]);
 
 	return(
-		<PageContainer>
-			<Joke id={joke.id} joke={joke.value} />
-		</PageContainer>
+		<>
+			<PageContainer>
+				<div>
+					<Joke id={joke.id} joke={joke.value} />
+				</div>
+				<div>
+					<JokeActions />
+				</div>
+			</PageContainer>
+		</>
 	);
 };
 
