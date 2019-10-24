@@ -1,8 +1,17 @@
 import React from 'react';
 
+import PageContainer from '../../components/PageContainer';
+import ErrorMessage from '../../components/ErrorMessage';
+
 const NotFound = () => {
 	return(
-		<h1>Página não encontrada</h1>
+		<PageContainer>
+			<di>
+				<ErrorMessage>
+					Page not found
+				</ErrorMessage>
+			</di>
+		</PageContainer>
 	);
 };
 
