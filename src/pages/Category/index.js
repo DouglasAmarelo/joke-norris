@@ -5,24 +5,34 @@ import * as api from '../../services/api';
 import PageContainer from '../../components/PageContainer';
 import Joke from '../../components/Joke';
 import JokeActions from '../../components/JokeActions';
+import Loading from '../../components/Loading';
 
 const Category = (props) => {
 	const { category } = props.match.params;
 	const [joke, setJoke] = useState('');
 
-	const getAJoke = () => {
-		api.getJoke(category).then(joke => setJoke(joke));
+	const getAJoke = async () => {
+		setJoke('');
+		const thisJoke = await api.getJoke(category);
+		await setJoke(thisJoke);
 	};
 
 	useEffect(() => {
 		getAJoke();
 	}, []);
 
+
 	return(
 		<>
 			<PageContainer>
 				<div>
-					<Joke id={joke.id} joke={joke.value} />
+					{joke && (
+						<Joke id={joke.id} joke={joke.value} />
+					)}
+
+					{!joke && (
+						<Loading />
+					)}
 				</div>
 				<div>
 					<JokeActions getAJoke={getAJoke} />
