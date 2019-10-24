@@ -21,21 +21,27 @@ const Category = (props) => {
 		getAJoke();
 	}, []);
 
-
 	return(
 		<>
 			<PageContainer>
 				<div>
 					{joke && (
-						<Joke id={joke.id} joke={joke.value} />
+						<Joke
+							id={joke.id}
+							joke={joke.value}
+						/>
 					)}
 
 					{!joke && (
 						<Loading />
 					)}
 				</div>
+
 				<div>
-					<JokeActions getAJoke={getAJoke} />
+					<JokeActions
+						category={category}
+						getAJoke={getAJoke}
+					/>
 				</div>
 			</PageContainer>
 		</>

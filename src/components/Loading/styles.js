@@ -13,11 +13,11 @@ export const Sphere = styled.span`
 	background-color: #fff;
 	border-radius: 50%;
 	bottom: 0;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, .7);
 	display: inline-block;
 	height: ${sphereSize};
 	position: absolute;
 	width: ${sphereSize};
-	box-shadow: 0 2px 2px rgba(0, 0, 0, .7);
 
 	&.sphere__01 {
 		animation-delay: 0;

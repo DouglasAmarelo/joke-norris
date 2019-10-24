@@ -24,7 +24,6 @@ const PageContainer = ({ children }) => {
 		chooseRandomColor(pageColors);
 	}, []);
 
-
 	return(
 		<S.PageContainer bgColors={bgColor}>
 			{children}

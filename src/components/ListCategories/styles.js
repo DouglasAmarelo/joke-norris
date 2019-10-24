@@ -5,16 +5,16 @@ export const List = styled.ul`
 	align-content: center;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
 	height: 100%;
+	justify-content: center;
 	list-style: none;
 	width: 100%;
 `;
 
 export const ListItem = styled.li`
 	flex: 1 1 20%;
-	text-align: center;
 	margin: .8em .2em;
+	text-align: center;
 `;
 
 export const ListItemLink = styled(Link)`
@@ -29,9 +29,9 @@ export const ListItemLink = styled(Link)`
 	text-transform: uppercase;
 	transition:
 		color .2s ease,
-		text-shadow .2s ease,
 		font-size .3s ease,
-		padding .3s ease
+		padding .3s ease,
+		text-shadow .2s ease
 	;
 
 	@media (max-width: 640px) { font-size: 22px; }

@@ -19,13 +19,13 @@ export const ActionButton = styled.button`
 	text-transform: uppercase;
 	transition:
 		box-shadow .3s ease,
-		text-shadow .3s ease,
 		font-size .3s ease,
-		padding .3s ease
+		padding .3s ease,
+		text-shadow .3s ease
 	;
 
 	&:hover {
-		box-shadow: 0 0 10px 0 #fff;
+		box-shadow: 0 0 7px 0 #fff;
 		text-shadow: 0 2px 1px #ccc;
 	}
 
@@ -47,7 +47,7 @@ export const ActionLink = styled(Link)`
 	@media (max-width: 640px) { font-size: 10px; }
 
 	&:hover {
-		text-decoration: none;
 		color: #000;
+		text-decoration: none;
 	}
 `;

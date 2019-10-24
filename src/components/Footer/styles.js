@@ -14,8 +14,8 @@ export const Footer = styled.footer`
 	width: 100%;
 
 	@media (max-width: 490px) {
-		height: 50px;
 		font-size: 10px;
+		height: 50px;
 	}
 
 	a { color: #fff; }

@@ -6,11 +6,11 @@ import ErrorMessage from '../../components/ErrorMessage';
 const NotFound = () => {
 	return(
 		<PageContainer>
-			<di>
+			<div>
 				<ErrorMessage>
 					Page not found
 				</ErrorMessage>
-			</di>
+			</div>
 		</PageContainer>
 	);
 };

@@ -7,7 +7,10 @@ const ListCategories = ({ categories }) => {
 		<S.List>
 			{categories.map(category => (
 				<S.ListItem key={category}>
-					<S.ListItemLink to={`/category/${category}`}>
+					<S.ListItemLink
+						to={`/category/${category}`}
+						title={category}
+					>
 						{category}
 					</S.ListItemLink>
 				</S.ListItem>

@@ -7,8 +7,14 @@ import jokeNorrisLogo from '../../assets/images/joke-norris-logo.jpg';
 const Header = () => {
 	return(
 		<S.Header>
-			<Link to="/" title="Home">
-				<img src={jokeNorrisLogo} alt="Joke Norris"/>
+			<Link
+				to="/"
+				title="Home"
+			>
+				<img
+					src={jokeNorrisLogo}
+					alt="Joke Norris"
+				/>
 			</Link>
 		</S.Header>
 	);

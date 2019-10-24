@@ -14,6 +14,5 @@ const getJoke = jokeCategory => fetchDataFromApi(`https://api.chucknorris.io/jok
 
 export {
 	getJokeCategories,
-	getJoke
+	getJoke,
 }
-
