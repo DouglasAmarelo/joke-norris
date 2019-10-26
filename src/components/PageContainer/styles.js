@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const PageContainer = styled.section`
-	background: ${props => (
-		props.bgColors ? `linear-gradient(to right, ${props.bgColors.colorFrom}, ${props.bgColors.colorTo})` : `linear-gradient(to right, #AA076B, #61045F)`
+	background: ${({ bgColors }) => (
+		bgColors ? `linear-gradient(to right, ${bgColors.colorFrom}, ${bgColors.colorTo})` : `linear-gradient(to right, #AA076B, #61045F)`
 	)};
 	display: flex;
 	flex-direction: column;
